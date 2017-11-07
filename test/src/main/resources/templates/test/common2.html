@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6-1/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/4.0.0-alpha.6-1/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6-1/css/bootstrap-theme.min.css"
+          th:href="@{/webjars/bootstrap/4.0.0-alpha.6-1/css/bootstrap-theme.min.css}"/>
+    <link rel="stylesheet" href="http://necolas.github.io/normalize.css/5.0.0/normalize.css"
+          th:href="@{/webjars/normalize.css/5.0.0/normalize.css}"/>
+</head>
+<body>
+
+<section class="container" th:fragment="replace2">
+
+    <fieldset class="page-header">
+        <h2 class="" style="background-color: #33BFDB; padding: 5px;" th:text="NO.11">a1</h2>
+        <fieldset class="container form-group resize" >
+            <div class="row">
+                <div class="col-7">
+                    <h4>△▼︎問題▲︎▽</h4>
+                    <div th:utext="${TestForm.test11}">ここに問題を記載</div>
+                </div>
+                <div clas="col-5 form-check bg-info">
+                    <h4>○●◉回答◉○●</h4>
+                    <div th:if="${#fields.hasErrors('answer11')}" th:errors="*{answer11}" th:errorclass="err" class="error-div"></div>
+                    <div th:each="test: ${TestForm.testformmap11}" style="padding: 10px;">
+                        <label class="form-check-label custom-control custom-radio">
+                            <input type="radio" class="form-check-input custom-control-input" th:value="${test.key}" th:field="*{answer11}" />
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description" th:utext="${test.value}"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <fieldset class="page-header">
+        <h2 class="" style="background-color: #33BFDB; padding: 5px;" th:text="NO.12">a1</h2>
+        <fieldset class="container form-group resize" >
+            <div class="row">
+                <div class="col-7">
+                    <h4>△▼︎問題▲︎▽</h4>
+                    <div th:utext="${TestForm.test12}">ここに問題を記載</div>
+                </div>
+                <div clas="col-5 form-check bg-info">
+                    <h4>○●◉回答◉○●</h4>
+                    <div th:if="${#fields.hasErrors('answer12')}" th:errors="*{answer12}" th:errorclass="err" class="error-div"></div>
+                    <div th:each="test: ${TestForm.testformmap12}" style="padding: 10px;">
+                        <label class="form-check-label custom-control custom-radio">
+                            <input type="radio" class="form-check-input custom-control-input" th:value="${test.key}" th:field="*{answer12}" />
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description" th:utext="${test.value}"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <fieldset class="page-header">
+        <h2 class="" style="background-color: #33BFDB; padding: 5px;" th:text="NO.13">a1</h2>
+        <fieldset class="container form-group resize" >
+            <div class="row">
+                <div class="col-7">
+                    <h4>△▼︎問題▲︎▽</h4>
+                    <div th:utext="${TestForm.test23}">ここに問題を記載</div>
+                </div>
+                <div clas="col-5 form-check bg-info">
+                    <h4>○●◉回答◉○●</h4>
+                    <div th:if="${#fields.hasErrors('answer13')}" th:errors="*{answer13}" th:errorclass="err" class="error-div"></div>
+                    <div th:each="test: ${TestForm.testformmap23}" style="padding: 10px;">
+                        <label class="form-check-label custom-control custom-radio">
+                            <input type="radio" class="form-check-input custom-control-input" th:value="${test.key}" th:field="*{answer13}" />
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description" th:utext="${test.value}"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <fieldset class="page-header">
+        <h2 class="" style="background-color: #33BFDB; padding: 5px;" th:text="NO.14">a1</h2>
+        <fieldset class="container form-group resize" >
+            <div class="row">
+                <div class="col-7">
+                    <h4>△▼︎問題▲︎▽</h4>
+                    <div th:utext="${TestForm.test14}">ここに問題を記載</div>
+                </div>
+                <div clas="col-5 form-check bg-info">
+                    <h4>○●◉回答◉○●</h4>
+                    <div th:if="${#fields.hasErrors('answer14')}" th:errors="*{answer14}" th:errorclass="err" class="error-div"></div>
+                    <div th:each="test: ${TestForm.testformmap14}" style="padding: 10px;">
+                        <label class="form-check-label custom-control custom-radio">
+                            <input type="radio" class="form-check-input custom-control-input" th:value="${test.key}" th:field="*{answer14}" />
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description" th:utext="${test.value}"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <fieldset class="page-header">
+        <h2 class="" style="background-color: #33BFDB; padding: 5px;" th:text="NO.15">a1</h2>
+        <fieldset class="container form-group resize" >
+            <div class="row">
+                <div class="col-7">
+                    <h4>△▼︎問題▲︎▽</h4>
+                    <div th:utext="${TestForm.test15}">ここに問題を記載</div>
+                </div>
+                <div clas="col-5 form-check bg-info">
+                    <h4>○●◉回答◉○●</h4>
+                    <div th:if="${#fields.hasErrors('answer15')}" th:errors="*{answer15}" th:errorclass="err" class="error-div"></div>
+                    <div th:each="test: ${TestForm.testformmap15}" style="padding: 10px;">
+                        <label class="form-check-label custom-control custom-radio">
+                            <input type="radio" class="form-check-input custom-control-input" th:value="${test.key}" th:field="*{answer15}" />
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description" th:utext="${test.value}"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <fieldset class="page-header">
+        <h2 class="" style="background-color: #33BFDB; padding: 5px;" th:text="NO.16">a1</h2>
+        <fieldset class="container form-group resize" >
+            <div class="row">
+                <div class="col-7">
+                    <h4>△▼︎問題▲︎▽</h4>
+                    <div th:utext="${TestForm.test16}">ここに問題を記載</div>
+                </div>
+                <div clas="col-5 form-check bg-info">
+                    <h4>○●◉回答◉○●</h4>
+                    <div th:if="${#fields.hasErrors('answer16')}" th:errors="*{answer16}" th:errorclass="err" class="error-div"></div>
+                    <div th:each="test: ${TestForm.testformmap16}" style="padding: 10px;">
+                        <label class="form-check-label custom-control custom-radio">
+                            <input type="radio" class="form-check-input custom-control-input" th:value="${test.key}" th:field="*{answer16}" />
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description" th:utext="${test.value}"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <fieldset class="page-header">
+        <h2 class="" style="background-color: #33BFDB; padding: 5px;" th:text="NO.17">a1</h2>
+        <fieldset class="container form-group resize" >
+            <div class="row">
+                <div class="col-7">
+                    <h4>△▼︎問題▲︎▽</h4>
+                    <div th:utext="${TestForm.test17}">ここに問題を記載</div>
+                </div>
+                <div clas="col-5 form-check bg-info">
+                    <h4>○●◉回答◉○●</h4>
+                    <div th:if="${#fields.hasErrors('answer17')}" th:errors="*{answer17}" th:errorclass="err" class="error-div"></div>
+                    <div th:each="test: ${TestForm.testformmap17}" style="padding: 10px;">
+                        <label class="form-check-label custom-control custom-radio">
+                            <input type="radio" class="form-check-input custom-control-input" th:value="${test.key}" th:field="*{answer17}" />
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description" th:utext="${test.value}"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <fieldset class="page-header">
+        <h2 class="" style="background-color: #33BFDB; padding: 5px;" th:text="NO.18">a1</h2>
+        <fieldset class="container form-group resize" >
+            <div class="row">
+                <div class="col-7">
+                    <h4>△▼︎問題▲︎▽</h4>
+                    <div th:utext="${TestForm.test18}">ここに問題を記載</div>
+                </div>
+                <div clas="col-5 form-check bg-info">
+                    <h4>○●◉回答◉○●</h4>
+                    <div th:if="${#fields.hasErrors('answer18')}" th:errors="*{answer18}" th:errorclass="err" class="error-div"></div>
+                    <div th:each="test: ${TestForm.testformmap18}" style="padding: 10px;">
+                        <label class="form-check-label custom-control custom-radio">
+                            <input type="radio" class="form-check-input custom-control-input" th:value="${test.key}" th:field="*{answer18}" />
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description" th:utext="${test.value}"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <fieldset class="page-header">
+        <h2 class="" style="background-color: #33BFDB; padding: 5px;" th:text="NO.19">a1</h2>
+        <fieldset class="container form-group resize" >
+            <div class="row">
+                <div class="col-7">
+                    <h4>△▼︎問題▲︎▽</h4>
+                    <div th:utext="${TestForm.test19}">ここに問題を記載</div>
+                </div>
+                <div clas="col-5 form-check bg-info">
+                    <h4>○●◉回答◉○●</h4>
+                    <div th:if="${#fields.hasErrors('answer19')}" th:errors="*{answer19}" th:errorclass="err" class="error-div"></div>
+                    <div th:each="test: ${TestForm.testformmap19}" style="padding: 10px;">
+                        <label class="form-check-label custom-control custom-radio">
+                            <input type="radio" class="form-check-input custom-control-input" th:value="${test.key}" th:field="*{answer19}" />
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description" th:utext="${test.value}"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </fieldset>
+
+    <fieldset class="page-header">
+        <h2 class="" style="background-color: #33BFDB; padding: 5px;" th:text="NO.20">a1</h2>
+        <fieldset class="container form-group resize" >
+            <div class="row">
+                <div class="col-7">
+                    <h4>△▼︎問題▲︎▽</h4>
+                    <div th:utext="${TestForm.test20}">ここに問題を記載</div>
+                </div>
+                <div clas="col-5 form-check bg-info">
+                    <h4>○●◉回答◉○●</h4>
+                    <div th:if="${#fields.hasErrors('answer20')}" th:errors="*{answer20}" th:errorclass="err" class="error-div"></div>
+                    <div th:each="test: ${TestForm.testformmap20}" style="padding: 10px;">
+                        <label class="form-check-label custom-control custom-radio">
+                            <input type="radio" class="form-check-input custom-control-input" th:value="${test.key}" th:field="*{answer20}" />
+                            <span class="custom-control-indicator"></span>
+                            <span class="custom-control-description" th:utext="${test.value}"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </fieldset>
+
+</section>
+
+</body>
+</html>
