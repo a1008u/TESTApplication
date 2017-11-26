@@ -1,59 +1,240 @@
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(1,'Q:このコードを、コンパイル及び実行するとどのような結果になるか。<br /><br />package b; <br /><br />public class Q2 { <br />&nbsp public static void main(String[] args) { <br />&nbsp &nbsp int i = 5;<br /> &nbsp &nbsp while(i >= 0 ) { <br /> &nbsp &nbsp &nbsp System.out.println((i--) + \" \"); <br /> &nbsp &nbsp } <br /> &nbsp }
-','3','4 3 2 1 0', '5 4 3 2 1 0', '4 3 2 1 0 -1', '4が無限に出力される', '5が無限に出力される');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(2,'Q:コンパイルに成功し、「aaabbb」と出力されるようにするには、<br />[1]の部分にどの修飾子を指定すればいいか。<br /><br />public static void main(String[] args) { <br />&nbsp &nbsp String str = \"aaa\"; <br />&nbsp &nbsp str = foo(str); <br />&nbsp &nbsp  System.out.println(str); <br />&nbsp  } <br /><br />&nbsp  /*[1]*/ String foo(Sting s) { <br />&nbsp&nbsp return s + 　\"bbb\"; <br />&nbsp&nbsp} <br />&nbsp<br />
-','3','public', 'void', 'static', 'private', '修飾子は必要ない。');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(3,'Q:プログラムが正常にコンパイルされるようにするには、<br /> どのコードをSportsインタフェースに挿入すればいいですか。(2つ選択してください)<br /><br />interface Sports{<br /> &nbsp // insert code here<br /> }<br /><br />&nbsp A)String name;<br /> &nbsp B)private void setScore(int score);<br /> &nbsp C)void addPlayer(String name);<br /> &nbsp D)Public static void setCaptain(String name);<br /> &nbsp E)public String getScore();<br />
-','5','ab', 'bc', 'ad', 'cd', 'ce');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(4,'Q:このコードを、コンパイル及び実行するとどのような結果になるか。<br /><br />public class Q4{<br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp for (int i=0; ; i++) {<br />&nbsp&nbsp&nbsp int j = 1;<br />&nbsp&nbsp&nbsp while (j <= 5) {<br />&nbsp&nbsp&nbsp&nbsp System.out.println(j++);<br />&nbsp&nbsp&nbsp}<br />&nbsp&nbsp}<br />&nbsp}<br />
-','4','2345が1回出力される。', '12345が1回出力される。', '2345が無限に出力される。', '１2345が無限に出力される。', 'コンパイルに失敗する。');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(5,'Q:privateキーワードで修飾できるものはどれか。(3つ選択してください)<br /><br />　&nbsp a)クラスのコンストラクタ<br />&nbsp b)インタフェースのメソッド<br />&nbsp c)クラスの抽象メソッド<br />&nbsp d)クラスの具象(コンクリート)メソッド<br />&nbsp e)インタフェースの変数<br />&nbsp f)クラスの変数<br />
-','4','abc', 'def', 'bcd', 'adf', 'cef');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(6,'Q:クラスの宣言として有効なものはどれですか。(3つ選択してください)<br /><br />　&nbsp a)public class MyObject{ }<br />&nbsp b)class MyObject extends Java.lang.Object{ }<br />&nbsp c)public class MyObject extends Java.lang.*{ }<br />&nbsp d)final class MyObject{ }<br />&nbsp e)public class MyObject implements Object{ }<br />
-','4','abc', 'acd', 'ade', 'abd', 'abe');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(7,'Q:コンパイルを成功させるには、【ここにコードを挿入】の部分に追加すればいいか。<br /><br />public class Fruit2{<br />  &nbsp public static void main(String[] args) {<br />  &nbsp&nbsp String[] sa = {\"apple\",\"orange\",\"banana\",};<br />  &nbsp&nbsp 【ここにコードを挿入】<br />  &nbsp&nbsp&nbsp System.out.println(s);<br />  &nbsp&nbsp}<br />
-','3','for (s:sa)', 'for (sa:s)', 'for (String s: sa)', 'for (sa: String s)', 'for (String[] sa: Sting s)');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(8,'Q:整数配列の宣言として有効なものはどれですか。(3つ選択してください) <br /><br />&nbsp a)int[&nbsp] arr1 = {10,20,30,40};<br />  &nbsp b)int arr2 = new int[3];<br />  &nbsp c)int[&nbsp] arr = new int[3];<br />  &nbsp d)int[&nbsp] arr = null;<br />  &nbsp&nbsp&nbsp&nbsp arr = new int[3];<br />  &nbsp e)int[&nbsp] arr = new int(3);<br />  &nbsp f)int[&nbsp] arr = new int()[3];<br />  &nbsp g)int arr[3];<br />
-','5','bcd', 'afg', 'cdf', 'efg', 'acd');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(9,'Q:変数を適切にカプセル化し、値が変更されないようにするには、クラスでどのように宣言しますか。
-','4','public abstract', 'public final', 'private static', 'private final', 'private abstract');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(10,'Q:このコードに関して正しいものはどれか。<br /><br />public class Limits{<br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp byte b = -100;        //A<br /> &nbsp&nbsp short s = 70000;     //B<br /> &nbsp&nbsp int i = -10000000;  //C<br /> &nbsp&nbsp long L = 123456789L;  //D<br /> &nbsp }<br />
-','4','コンパイルに成功する。', '複数のエラーが発生するので、<br />コンパイルに失敗する。', 'Aでエラーが発生するので、<br />コンパイルに失敗する。', 'Bでエラーが発生するので、<br />コンパイルに失敗する。', 'Cでエラーが発生するので、<br />コンパイルに失敗する。');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(11,'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />public class Cars{<br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp Cars[] c = {new Cars(), new Cars(), new Cars()};//A <br /> &nbsp&nbsp int x = c.length;<br /> &nbsp&nbsp do while(x > 0) { //B<br /> &nbsp&nbsp&nbsp System.out.print(x-- + \" \");<br /> &nbsp&nbsp }<br /> &nbsp}<br /> }
-','1','Bの行にエラーがあるため、<br />コンパイルに失敗する。', 'Aの行にエラーがあるため、<br />コンパイルに失敗する。', '3 2 1', '2 1 0', '複数のエラーがあるため、<br />コンパイルに失敗する。');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(12,'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />public class Statics{<br /> &nbsp private static int i;<br /> &nbsp private int j;<br /> <br /> &nbsp public static int counter() {<br /> &nbsp&nbsp return ++i;<br /> &nbsp }<br /> &nbsp public int instance() {<br /> &nbsp&nbsp return counter();<br /> &nbsp }<br /> <br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp Statics svm = new Statics();<br /> &nbsp&nbsp System.out.println(svm.instance());//A<br /> &nbsp&nbsp System.out.println(svm.instance() + \" \");//B<br /> &nbsp }<br /> }<br />
-','4','Aが原因で、コンパイルに失敗する。', 'プログラムがコンパイルされ、<br />12が出力される。', 'プログラムがコンパイルされ、<br />21が出力される。', '例外がスローされ、何も出力されない。', 'Bが原因でコンパイルに失敗する。');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(13,'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />public class ArrayCopy{<br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp char[] arr1 = new char[7];<br /> &nbsp&nbsp arr1[0]=\"J\";<br /> &nbsp&nbsp arr1[1]=\"a\";<br /> &nbsp&nbsp arr1[2]=\"v\";<br /> &nbsp&nbsp arr1[3]=\"a\";<br /> <br /> &nbsp&nbsp char[] arr2 = {\"P\",\"l\",\"a\",\"t\",\"f\",\"o\",\"r\",\"m\"};<br /> &nbsp&nbsp arr1 = arr2;<br /> <br /> &nbsp&nbsp System.out.println(arr1);<br /> &nbsp }<br /> }<br />
-','4','JavaPla', 'Javafor', 'Platfor', 'Platform', 'コンパイルエラー');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(14,'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />public class While{<br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp int i=4;<br /> &nbsp&nbsp while(i++ < 6) {<br /> &nbsp&nbsp&nbsp System.out.println(\"true\");<br /> &nbsp&nbsp }<br /> &nbsp&nbsp i++;<br /> &nbsp }<br /> }<br />
-','5','コンパイルエラー', 'プログラムは実行されるが、例外スローされる。', 'プログラムは実行されるが、何も出力されない。', 'trueが1回出力される。', 'trueが2回出力される。');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(15,'Q:abstractとして宣言できるのは、どのJavaの構成要素ですか。(３つ選択してください)<br /><br />a)クラス<br /> b)変数<br /> c)メソッド<br /> d)パッケージ<br /> e)インタフェース<br />
-','4','abc', 'bde', 'cde', 'ace', 'bce');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(16,'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />public class Dipper{<br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp int x = 2;<br /> &nbsp&nbsp Dipper d = new Dipper();<br /> &nbsp&nbsp d.go(7);<br /> &nbsp }<br /> &nbsp void go (int y) {<br /> &nbsp&nbsp System.out.println( x-- * y );<br /> &nbsp }<br /> }<br />
-','5','0', '7', '14', 'コンパイルエラー', '実行時に例外がスローされる。');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(17,'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />public class Test{<br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp int i = 2;<br /> &nbsp&nbsp int j = i++;<br /> &nbsp&nbsp int z = ++j;<br /> &nbsp&nbsp System.out.println(i+\" :\" +j+\" :\" +z);<br /> &nbsp}<br /> }<br />
-','3','2:2:3', '2:3:4', '3:3:3', '3:3:4', '3:4:4');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(18,'INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(18,'''',''5'',''10 7'', ''6 7'', ''3 6'', ''10 6'', ''6 3'');
-','5','10 7', '6 7', '3 6', '10 6', '6 3');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(19,'Q:Javaのソース・ファイルに関して正しい記述はどれですか。(３つ選択してください)<br /><br />　&nbsp a)ソース・ファイルの名前は、public宣言されたクラスの名前と一致する必要がある。<br />&nbsp b)各ソース・ファイルでは、import文を1つだけ指定できる。<br /> &nbsp c)各ソース・ファイルでは、finalクラスを1つだけ指定できる。<br /> &nbsp d)package文はオプションであり、使用する場合はソース・ファイルの1行目に記述する必要がある。<br /> &nbsp e)Javaのソース・ファイルには、クラスとインタフェースの両方の宣言を含めることできる。<br /> &nbsp f)import文は、ソース・ファイル内のどの場所でも定義できる。<br />
-','2','acd', 'ade', 'def', 'bdf', 'cde');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(20,'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />public class Forfor{<br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp for (int i =0; i<10 ; i++) {<br /> &nbsp&nbsp&nbsp for (i=5; i<10 ; i++) {<br /> &nbsp&nbsp&nbsp&nbsp System.out.println(i);<br /> &nbsp&nbsp&nbsp }<br /> &nbsp&nbsp }<br /> &nbsp}<br /> }<br />
-','3','コンパイルエラー', '例外スローされ、何も出力されない。', '56789が1回出力される。', '56789が10回出力される。', '56789が出力され、例外がスローされる。');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(21,'Q:「insert code here」にどのコードを入れれば、コンパイルと実行が正常に行われでしょうか<br /><br />public class App{<br /> &nbsp private String lang, edition;<br /> &nbsp private String flavor = \" SE\" ;<br /> <br /> &nbsp App() {<br /> &nbsp&nbsp //insert code here<br /> &nbsp }<br /> <br /> &nbsp App(String edition) {<br /> &nbsp&nbsp this.edition = edition;<br /> &nbsp }<br /> <br /> &nbsp public void info() {<br /> &nbsp&nbsp System.out.print(lang + \" :\"  + edition);<br /> &nbsp }<br /> <br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp App obj = new App();<br /> &nbsp&nbsp obj.info();<br /> &nbsp }<br /> }<br />
-','2','lang = \" Java\" ;<br /> &nbsp&nbsp this(\" SE\" );', 'this(\" SE\" );<br /> &nbsp&nbsp lang = \" Java\" ;', 'this(flavor);<br /> &nbsp&nbsp lang = \" Java\" ;', 'lang = \" Java\" ;<br /> &nbsp&nbsp this.App(flavor);', 'App(\" SE\" );<br /> &nbsp&nbsplang = \" Java\" ;');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(22,'Q:コードが正常にコンパイルされ、fiction,nonfictionが出力されるようにするには、insert code hereの部分に何を挿入すればいいですか。<br /><br />class Book{<br /> &nbsp String category = \" nonfiction\" ;<br /> }<br /> <br /> public class Literature extends Book{<br /> &nbsp String category = \" fiction\" ;<br /> <br /> &nbsp public void displayCategories() {<br /> &nbsp&nbsp System.out.print(category + \" ,\"  + /* insert code here */);<br /> &nbsp }<br /> <br /> &nbsp public static void main (String[] args) {<br /> &nbsp&nbsp Literature obj = new Literature();<br /> &nbsp&nbsp obj.displayCategories();<br /> &nbsp }<br /> }<br />
-','2','this.category', 'super.category', 'this(category)', 'super().category', 'Book.category');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(23,'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />class Base{<br /> &nbsp public void disp() {<br /> &nbsp&nbsp System.out.println(\" Base\" );<br /> &nbsp }<br /> }<br /> <br /> class Sub extends Base{<br /> &nbsp public void disp() {<br /> &nbsp&nbsp System.out.print(\" Sub\" );<br /> &nbsp }<br /> }<br /> <br /> public class Test{<br /> &nbsp public static void main (String[] args) {<br /> &nbsp&nbsp Base b = new Sub();<br /> &nbsp&nbsp b.disp();<br /> &nbsp }<br /> }<br />
-','1','Sub', 'Base', 'Sub Base', 'コンパイルエラー', '実行時に例外スローされる。');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(24,'Q:ポリモフィズムともとも関連が深いのはどれですか。
-','2','スーパークラス (親クラス)の継承', 'スーパークラスのメソッドのオーバーライド', '各メソッドへの一意な戻り値型の割当て', 'サブクラスの共通メソッドのオーバーロード', 'インタフェースの継承');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(25,'Q:Javaにおける継承に関して正しい記述はどれですか(2つ選択してください)<br /><br />a)1つのサブクラスで複数のスーパークラスを継承できる。<br /> b)1つのスーパークラスは複数のサブクラスを持つことができる。<br /> c)サブクラスはスーパークラスのメンバーをすべて継承する。<br /> d)サブクラスをさらに継承できる。<br />
-','5','ab', 'ac', 'ad', 'bc', 'bd');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(26,'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />public class Base {<br /> &nbsp public static void main (String[] args) {<br /> &nbsp&nbsp for(int x = 0; ++x<5;)<br /> &nbsp&nbsp&nbsp System.out.print(x + \"  \" );<br /> &nbsp }<br /> }<br />
-','2','1 2 3 4', '0 1 2 3 4', '1 2 3 4 5', '0 1 2 3 4 5', 'コンパイルエラー');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(27,'Q:このコードをコンパイルして「java MethodTest data」というコマンドを実行すると、どのような結果になります。<br /><br />class MethodTest{<br /> &nbsp public static void main (String[] args) {<br /> &nbsp&nbsp System.out.println(args[0] + \" is received.\" );<br /> &nbsp }<br /> }<br />
-','4','data', 'MethodTest data', 'MethodTest is received.', 'data is received.', 'data is');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(28,'Q:このコードをコンパイル及び、実行するとどのような結果になるか。interface Fruit{<br /><br /> &nbsp int getSeeds();<br /> }<br /> <br /> class Apple implements Fruit{<br /> &nbsp public int getSeeds() {<br /> &nbsp&nbsp return 5;<br /> &nbsp }<br /> }<br /> <br /> class Orange{<br /> &nbsp public int getSeeds() {<br /> &nbsp&nbsp return 16;<br /> &nbsp }<br /> }<br /> <br /> public class ExtractSeeds{<br />&nbsp public static void main (String[] args) {<br />&nbsp&nbsp Fruit[] hopper = {new Apple(), new Orange(), new Apple()};<br />&nbsp&nbsp for(int i=0; i < hopper.length; i++) {<br />&nbsp&nbsp&nbsp System.out.print(hopper[i].getSeeds()); //A<br />&nbsp&nbsp }<br />&nbsp }<br />}
-','5','5165が出力される。', 'Fruitインタフェースのコンパイルに失敗する。', 'Aで例外スローされる。', 'ExtractSeedsクラスのコンパイルに失敗する。', 'Orangeクラスのコンパイルに失敗する。');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(29,'Q:このアプリケーションを作成するには、どのJavaテクノロジを使用しますか。<br /><br />ABC病院は、メニュー形式の使いやすいモジュールを使用して病院関連の情報を保存、更新及び取得できる、GUIベースのアプリケーションの開発を希望しています。このアプリケーションの主要なユーザーは、事務員です。 将来的な拡張として、Webベースのシステムに移行しようと考えています。
-','2','Java SE', 'Java EE', 'Java ME', 'Java FX', 'Java Swing');
-INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(30,'Q:オーバーロードされたメソッドがあるクラスの宣言として、最も適切なものはどれですか。','1','class Fifute {<br />　&nbsp public void setPoint(int x, int y) {&nbsp}<br />　&nbsp public void setPoint(int x) {&nbsp}<br />　}', 'class Fifute {<br />　&nbsp public void setPoint(int x, int y) {&nbsp}<br />　&nbsp public int setPoint(int x,int y) {}<br />　}', 'class Fifute {<br />　&nbsp public void setPoint(int x, int y) {&nbsp}<br />　&nbsp public void draw() {&nbsp}<br />　', 'class Fifute {<br />　&nbsp public void setPoint(int x, int y) {&nbsp}<br />　&nbsp public setPoint(int x) {}<br />　}', '回答なし');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(1,
+'Q:以下のプログラムを実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />public class Test {&nbsp public static void main(String[] args) {<br />&nbsp &nbsp  int x = 7;<br />&nbsp &nbsp int y = 6*x++;<br />&nbsp &nbsp System.out.println(" y=" + y);<br /><br />&nbsp &nbsp int a = 7;<br />&nbsp &nbsp int b = 6*++a;<br />&nbsp &nbsp System.out.println(" b=" + b);<br />&nbsp }<br />}<br />'
+,'1'
+,'y=42<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp b=48'
+,'y=48<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp b=48'
+,'y=48<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp b=42'
+,'y=42<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp b=42'
+,'コンパイルエラー');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(2,
+'Q:以下のプログラムを実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />public class Test {<br />&nbsp public static void main(String[] args) {<br />&nbsp &nbsp boolean i = true;<br />&nbsp &nbsp boolean j = false;<br />&nbsp &nbsp short k = 10;<br /><br />&nbsp &nbsp if((k == 10) && (j = true)) k--;<br />&nbsp &nbsp if((i = false) || (k == 9))<br /><br />&nbsp &nbsp k--;<br />&nbsp &nbsp k--;<br /><br />&nbsp &nbsp System.out.println("k=" + k);<br />&nbsp }<br />}<br />'
+,'2'
+,'コンパイルエラー'
+,'k=7'
+,'k=8'
+,'k=9'
+,'実行時エラー');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(3,
+'Q:以下のプログラムを実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />public class Test {<br />&nbsp public static void main (String[] args) {<br />&nbsp &nbsp String[] array = {"A","B"};<br />&nbsp &nbsp for(String a : array) {<br />&nbsp &nbsp &nbsp   for(String b : array) {<br />&nbsp &nbsp &nbsp &nbsp if("B".equals(b))<br />&nbsp &nbsp &nbsp &nbsp &nbsp break;<br />&nbsp &nbsp &nbsp &nbsp System.out.print(b);<br />&nbsp &nbsp &nbsp }<br />&nbsp &nbsp }<br />&nbsp }<br />}<br />'
+,'1'
+,'「AA」と表示される'
+,'「ABAB」と表示される'
+,'「A」と表示される'
+,'「AB」と表示される'
+,'「BB」と表示される');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(4,
+'Q:以下のプログラムを実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />public class Test {<br />&nbsp public static void main (String[] args) {<br />&nbsp &nbsp int i = 23, j = 5;<br />&nbsp &nbsp double d = 3.0;<br /><br />&nbsp &nbsp do {<br />&nbsp &nbsp &nbsp i++;<br />&nbsp &nbsp &nbsp while(d > 6)<br />&nbsp &nbsp &nbsp &nbsp  d++;<br />&nbsp &nbsp &nbsp do {<br />&nbsp &nbsp &nbsp &nbsp j++;<br />&nbsp &nbsp &nbsp &nbsp i+=j;<br />&nbsp &nbsp &nbsp } while(j < 7);<br />&nbsp &nbsp } while(i > 35);<br />&nbsp &nbsp System.out.println("i=" + i);<br />&nbsp }<br />}<br />'
+,'4'
+,'i = 30'
+,'i = 37'
+,'i = 35'
+,'無限ループ'
+,'コンパイルエラー');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(5,
+'Q:以下のプログラムを実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />public class Test {<br />&nbsp public static void main(String[] args) {<br />&nbsp &nbsp Test t = new Test();<br />&nbsp &nbsp System.out.print(t.calc(2,4));<br />&nbsp }<br /><br />&nbsp private double calc(double a, int b) {<br />&nbsp &nbsp return (a + b) / 2;<br />&nbsp }<br /><br />&nbsp private double calc(int a, double b) {<br />&nbsp &nbsp return (a * b) / 2;<br />&nbsp }<br />}<br />'
+,'4'
+,'3'
+,'4'
+,'3 4'
+,'コンパイルエラー'
+,'実行時エラー');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(6,
+'Q:クラスの宣言として有効なものはどれですか。(3つ選択してください)<br /><br />&nbsp a)public class MyObject{ }<br />&nbsp b)class MyObject extends Java.lang.Object{ }<br />&nbsp c)public class MyObject extends Java.lang.*{ }<br />&nbsp d)final class MyObject{ }<br />&nbsp e)public class MyObject implements Object{ }<br />'
+,'4'
+,'abc'
+, 'acd'
+, 'ade'
+, 'abd'
+, 'abe');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(7,
+'Q:コンパイルを成功させるには、【ここにコードを挿入】の部分に何を追加すればいいか。<br /><br />public class Fruit2{<br />  &nbsp public static void main(String[] args) {<br />  &nbsp&nbsp String[] sa = {"apple","orange","banana",};<br />  &nbsp&nbsp 【ここにコードを挿入】<br />  &nbsp&nbsp&nbsp System.out.println(s);<br />  &nbsp&nbsp}<br />'
+,'3'
+,'for (s:sa)'
+, 'for (sa:s)'
+, 'for (String s: sa)'
+, 'for (sa: String s)'
+, 'for (String[] sa: Sting s)');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(8,
+'Q:整数配列の宣言として有効なものはどれですか。(3つ選択してください) <br /><br />&nbsp a)int[&nbsp] arr1 = {10,20,30,40};<br />  &nbsp b)int arr2 = new int[3];<br />  &nbsp c)int[&nbsp] arr = new int[3];<br />  &nbsp d)int[&nbsp] arr = null;<br />  &nbsp&nbsp&nbsp&nbsp arr = new int[3];<br />  &nbsp e)int[&nbsp] arr = new int(3);<br />  &nbsp f)int[&nbsp] arr = new int()[3];<br />  &nbsp g)int arr[3];<br />'
+,'5'
+,'bcd'
+, 'afg'
+, 'cdf'
+, 'efg'
+, 'acd');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(9,
+'Q:変数を適切にカプセル化し、値が変更されないようにするには、クラスでどのように宣言しますか。'
+,'4'
+,'public abstract'
+, 'public final'
+, 'private static'
+, 'private final'
+, 'private abstract');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(10,
+'Q:このコードに関して正しいものはどれか。<br /><br />public class Limits{<br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp byte b = -100;        //A<br /> &nbsp&nbsp short s = 70000;     //B<br /> &nbsp&nbsp int i = -10000000;  //C<br /> &nbsp&nbsp long L = 123456789L;  //D<br /> &nbsp }<br />'
+,'4'
+,'コンパイルに成功する。'
+, '複数のエラーが発生するので、<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp コンパイルに失敗する。'
+, 'Aでエラーが発生するので、<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp コンパイルに失敗する。'
+, 'Bでエラーが発生するので、<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp コンパイルに失敗する。'
+, 'Cでエラーが発生するので、<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp コンパイルに失敗する。');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(11,
+'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />public class Cars{<br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp Cars[] c = {new Cars(), new Cars(), new Cars()};//A <br /> &nbsp&nbsp int x = c.length;<br /> &nbsp&nbsp do while(x > 0) { //B<br /> &nbsp&nbsp&nbsp System.out.print(x-- + " ");<br /> &nbsp&nbsp }<br /> &nbsp}<br /> }'
+,'1'
+,'Bの行にエラーがあるため、<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp コンパイルに失敗する。'
+, 'Aの行にエラーがあるため、<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp コンパイルに失敗する。'
+, '3 2 1'
+, '2 1 0'
+, '複数のエラーがあるため、<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp コンパイルに失敗する。');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(12,
+'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />public class Statics{<br /> &nbsp private static int i;<br /> &nbsp private int j;<br /> <br /> &nbsp public static int counter() {<br /> &nbsp&nbsp return ++i;<br /> &nbsp }<br /> &nbsp public int instance() {<br /> &nbsp&nbsp return counter();<br /> &nbsp }<br /> <br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp Statics svm = new Statics();<br /> &nbsp&nbsp System.out.println(svm.instance());//A<br /> &nbsp&nbsp System.out.println(svm.instance() + " ");//B<br /> &nbsp }<br /> }<br />'
+,'4'
+,'Aが原因で、コンパイルに失敗する。'
+, 'プログラムがコンパイルされ、<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 12が出力される。'
+, 'プログラムがコンパイルされ、<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 21が出力される。'
+, '例外がスローされ、何も出力されない。'
+, 'Bが原因でコンパイルに失敗する。');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(13,
+'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />public class ArrayCopy{<br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp char[] arr1 = new char[7];<br /> &nbsp&nbsp arr1[0]="J";<br /> &nbsp&nbsp arr1[1]="a";<br /> &nbsp&nbsp arr1[2]="v";<br /> &nbsp&nbsp arr1[3]="a";<br /> <br /> &nbsp&nbsp char[] arr2 = {"P","l","a","t","f","o","r","m"};<br /> &nbsp&nbsp arr1 = arr2;<br /> <br /> &nbsp&nbsp System.out.println(arr1);<br /> &nbsp }<br /> }<br />'
+,'4'
+,'JavaPla'
+, 'Javafor'
+, 'Platfor'
+, 'Platform'
+, 'コンパイルエラー');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(14,
+'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />public class While{<br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp int i=4;<br /> &nbsp&nbsp while(i++ < 6) {<br /> &nbsp&nbsp&nbsp System.out.println("true");<br /> &nbsp&nbsp }<br /> &nbsp&nbsp i++;<br /> &nbsp }<br /> }<br />'
+,'5'
+,'コンパイルエラー'
+, 'プログラムは実行されるが、例外スローされる。'
+, 'プログラムは実行されるが、何も出力されない。'
+, 'trueが1回出力される。'
+, 'trueが2回出力される。');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(15,
+'Q:abstractとして宣言できるのは、どのJavaの構成要素ですか。(３つ選択してください)<br /><br />a)クラス<br /> b)変数<br /> c)メソッド<br /> d)パッケージ<br /> e)インタフェース<br />'
+,'4'
+,'abc'
+, 'bde'
+, 'cde'
+, 'ace'
+, 'bce');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(16,
+'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />public class Dipper{<br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp int x = 2;<br /> &nbsp&nbsp Dipper d = new Dipper();<br /> &nbsp&nbsp d.go(7);<br /> &nbsp }<br /> &nbsp void go (int y) {<br /> &nbsp&nbsp System.out.println( x-- * y );<br /> &nbsp }<br /> }<br />'
+,'5'
+,'0'
+, '7'
+, '14'
+, 'コンパイルエラー'
+, '実行時に例外がスローされる。');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(17,
+'Q:このコードをコンパイル及び、実行するとどのような結果になるか。<br /><br />public class Test{<br /> &nbsp public static void main(String[] args) {<br /> &nbsp&nbsp int i = 2;<br /> &nbsp&nbsp int j = i++;<br /> &nbsp&nbsp int z = ++j;<br /> &nbsp&nbsp System.out.println(i+" :" +j+" :" +z);<br /> &nbsp}<br /> }<br />'
+,'3'
+,'2:2:3'
+, '2:3:4'
+, '3:3:3'
+, '3:3:4'
+, '3:4:4');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(18,
+'Q:以下のプログラムをコンパイル、実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />public class Sample {<br />&nbsp public static void main(String[] args) {<br />&nbsp &nbsp Sample sample = new Sample();<br />&nbsp &nbsp sample.hello("田中");<br />&nbsp &nbsp sample.hello("小林");<br />}<br /><br />&nbsp public void hello(String man) {<br />&nbsp &nbsp System.out.println(main + "くん、こんにちは。");<br />&nbsp v}<br /><br />&nbsp public void hello(String woman) {<br /><br />&nbsp &nbsp System.out.println(main + "さん、こんにちは。");<br />&nbsp }<br />}<br />'
+,'4'
+,'田中くん、こんにちは。'
+,'小林さん、こんにちは。<br />&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp 田中くん、こんにちは。'
+,'小林さん、こんにちは。'
+,'コンパイルエラー'
+,'実行時エラー');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(19,
+'Q:以下のプログラムをコンパイル、実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />public class A {<br />&nbsp public void test() {<br />&nbsp &nbsp System.out.println("AAAAA");<br />&nbsp }<br />}<br /><br />public class B extends A {<br />&nbsp public static void main(String[] args) {<br />&nbsp &nbsp B sample = new B();<br />&nbsp &nbsp sample.test();<br />&nbsp }<br /><br />&nbsp @Override<br />&nbsp public void test() {<br />&nbsp &nbsp System.out.println("BBBBB");<br />&nbsp }<br />}<br />'
+,'2'
+,'AAAAAと表示される'
+,'BBBBBと表示される'
+,'何も表示されない'
+,'コンパイルエラー'
+,'実行時エラー');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(20,
+'以下のプログラムをコンパイル、実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />public class A {<br />&nbsp public void test() {<br />&nbsp &nbsp System.out.println("AAAAA");<br />&nbsp }<br />}<br /><br />public class B extends A {<br />&nbsp public static void main(String[] args) {<br />&nbsp &nbsp A sample = new B();<br />&nbsp &nbsp sample.test();<br />&nbsp }<br /><br />&nbsp @Override<br />&nbsp public void test() {<br />&nbsp &nbsp System.out.println("BBBBB");<br />&nbsp }<br />}<br />'
+,'2'
+,'AAAAAと表示される'
+,'BBBBBと表示される'
+,'何も表示されない'
+,'コンパイルエラー'
+,'実行時エラー');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(21,
+'Q:以下のプログラムをコンパイル、実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />public class A {<br />&nbsp public void test() {<br />&nbsp &nbsp System.out.println("AAAAA");<br />&nbsp }<br />}<br /><br />public class B extends A {<br />&nbsp public static void main(String[] args) {<br />&nbsp &nbsp A sample = new A();<br />&nbsp &nbsp sample.test();<br />&nbsp }<br /><br />&nbsp @Override&nbsp public void test() {<br />&nbsp &nbsp System.out.println("BBBBB");<br />&nbsp }<br />}<br />'
+,'1'
+,'AAAAAと表示される'
+,'BBBBBと表示される'
+,'何も表示されない'
+,'コンパイルエラー'
+,'実行時エラー');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(22,
+'Q:以下のプログラムをコンパイル、実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />public abstract class Abs {<br />&nbsp void show(String str);<br />}<br /><br />public class Sample extends Abs {<br />&nbsp public static void main(String[] args) {<br /><br />&nbsp }<br /><br />&nbsp @Override<br />&nbsp public void show(String str) {<br /><br />&nbsp }<br />}<br />'
+,'3'
+,'Helloと表示される'
+,'何も表示されない'
+,'コンパイルエラー'
+,'実行時エラー'
+,'A〜D以外');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(23,
+'Q:以下のプログラムをコンパイル、実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />public abstract class Abs {<br />&nbsp abstract void show(String str);<br /><br />&nbsp public void hello() {<br />&nbsp &nbsp System.out.println("Hello");<br />&nbsp }<br />}<br /><br />public class Sample extends Abs {<br />&nbsp public static void main(String[] args) {<br />&nbsp &nbsp Sample sample = new Sample();<br />&nbsp &nbsp sample.hello();<br />&nbsp }<br />}<br />'
+,'3'
+,'Helloと表示される'
+,'何も表示されない'
+,'コンパイルエラー'
+,'実行時エラー'
+,'A〜D以外');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(24,
+'Q:以下のプログラムをコンパイル、実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />public abstract class Abs {<br />&nbsp public void hello() {<br />&nbsp &nbsp System.out.println("Hello");<br />&nbsp }<br />}<br /><br />public class Sample extends Abs {<br />&nbsp public static void main(String[] args) {<br />&nbsp &nbsp Sample sample = new Sample();<br />&nbsp &nbsp sample.hello();<br />&nbsp }<br />}<br />'
+,'1'
+,'Helloと表示される'
+,'何も表示されない'
+,'コンパイルエラー'
+,'実行時エラー'
+,'A〜D以外');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(25,
+'Q:以下のプログラムをコンパイル、実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />interface MyInterface {<br />&nbsp String message = "Hello";<br />}<br /><br />public class Sample implements MyInterface {<br />&nbsp public static void main(String[] args) {<br /><br />&nbsp }<br />}<br />'
+,'3'
+,'Helloと表示される'
+,'何も表示されない'
+,'コンパイルエラー'
+,'実行時エラー'
+,'A〜D以外');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(26,
+'Q:以下のプログラムをコンパイル、実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />interface MyInterface {<br />&nbsp String message = "Hello";<br />}<br /><br />class Imp implements MyInterface {<br />&nbsp public String getMessage() {<br />&nbsp &nbsp return message;<br />&nbsp }<br />}<br /><br />public class Sample implements MyInterface {<br />&nbsp public static void main(String[] args) {<br />&nbsp &nbsp Imp obj = new Imp();<br />&nbsp &nbsp String message = obj.getMessage();<br />&nbsp &nbsp System.out.println(message);<br />&nbsp }<br />}<br />'
+,'1'
+,'Helloと表示される'
+,'何も表示されない'
+,'コンパイルエラー'
+,'実行時エラー'
+,'A〜D以外');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(27,
+'Q:以下のプログラムをコンパイル、実行した際の実行結果として正しいものを右記から1つ選択しなさい。<br /><br />interface MyInterface {<br />&nbsp String message = "";<br />}<br /><br />class Imp implements MyInterface {<br />&nbsp public String getMessage() {<br />&nbsp &nbsp message = "Hello";<br />&nbsp &nbsp return message;<br />&nbsp }<br />}<br /><br />public class Sample implements MyInterface {<br />&nbsp public static void main(String[] args) {<br />&nbsp &nbsp Imp obj = new Imp();<br />&nbsp &nbsp String message = obj.getMessage();<br />&nbsp &nbsp System.out.println(message);<br />&nbsp }<br />}<br />'
+,'3'
+,'Helloと表示される'
+,'何も表示されない'
+,'コンパイルエラー'
+,'実行時エラー'
+,'A〜D以外');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(28,
+'Q:以下の説明内容に当てはまるものを一つ選択しなさい。<br /><br />・Webアプリケーションの中核となる業務処理を行う。<br />・プレゼンテーション層とデータ層の両方とのやり取りを行うため、最も多機能である。<br />・業務処理が複雑になるほど、負荷が高くなる。<br />'
+,'2'
+,'Webサーバー'
+,'アプリケーションサーバー'
+,'データベースサーバー'
+,'MVCモデル(Controller)'
+,'MVCモデル(View)');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(29,
+'Q:以下の説明内容に当てはまるものを一つ選択しなさい。<br /><br />・Webクライアントに対する窓口の役割を担っている。<br />・動作しなくなると、サービスが提供出来ないうえ、<br />&nbsp&nbsp クライアント側へサービスが停止している旨の通知も出来なくなる。<br />・システムの規模が大きくなると、冗長化と言う構成をとる事が多い。<br />'
+,'1'
+,'Webサーバー'
+,'アプリケーションサーバー'
+,'データベースサーバー'
+,'MVCモデル(Controller)'
+,'MVCモデル(View)');
+INSERT INTO test(testno, problemtext, collectanswer, answerpart1, answerpart2, answerpart3, answerpart4, answerpart5) VALUES(30,
+'Q:以下の説明内容に当てはまるものを一つ選択しなさい。<br /><br />・データの更新命令を受けたDBMSが更新内容を別のDBMSに連携する。<br />・連携を受けたDBMSが同じ内容の更新を自身のデータベースに実施する。<br />・連携を受けた側のデータベースの内容が直ちに更新されるとは限らない。<br />'
+,'4'
+,'MVCモデル(View)'
+,'MVCモデル(Model)'
+,'ミラーリング'
+,'レプリケーション'
+,'シェアードディスク');
